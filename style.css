@@ -1,0 +1,149 @@
+/*--> COLORES
+
+naranja-primary: #f12711
+naranja-secondary: #f5af19
+
+verde-primary: #1d8d36
+verde-secondary: #8ef519
+
+azul-primary: #09077c
+azul-secondary: #00b4db */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.poke-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.pokemon{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px;
+}
+.pokemon img{
+    width:70%;
+    height: auto;
+    margin-top: 10%;
+    object-fit:cover;
+    transition: all 0.5s;
+}
+
+.poke-personality{
+    margin-top: 10px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1rem;
+    
+}
+
+.stats{
+    width: 33%;
+    color: white;
+}
+
+.atq, .def{
+    border-right: 1px solid white;
+}
+
+h2{
+    margin-top: 5px;
+}
+
+
+
+/*estilos Charmander*/
+.card-stats-charmander{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right,#f12711,#f5af19);
+}
+
+.poke1 .date{
+    color: #f12711;
+    font-weight: bold;
+}
+
+.poke-name-charmander{
+    color: #f12711;;
+}
+
+.poke-name-charmander i{
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+/*estilos Squirtle*/
+
+.card-stats-squirtle{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right,#09077c,#00b4db);
+}
+
+.poke2 .date{
+    color:#09077c;
+    font-weight: bold;
+}
+
+.poke-name-squirtle{
+    color: #09077c;
+}
+
+.poke-name-squirtle i{
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+
+/*estilos Bullbasaur*/
+
+.card-stats-bullbasaur{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right,#1d8d36,#00b4db );
+}
+
+.poke3 .date{
+    color:#1d8d36;
+    font-weight: bold;
+}
+
+.poke-name-bullbasaur{
+    color: #1d8d36;
+}
+
+.poke-name-bullbasaur i{
+    color: black;
+    font-family:'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+
+img:hover{
+    transform: scale(1.2) rotate(15deg);
+    cursor: pointer;
+}
